@@ -1,0 +1,172 @@
+.job-slider-pagination{
+    display: flex;
+}
+
+:root {
+    --swiper-navigation-size: 0;
+}
+
+.swiper-button-prev, 
+.swiper-button-next{
+    background-image: url('../content/img/next-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 30px;
+    height: 20px;
+}
+.swiper-button-next{
+    
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    right: 10px;
+}
+.swiper-button-prev{
+    
+    left: 10px;
+}
+
+.swiper-button-prev:after, 
+.swiper-button-next:after{
+    font-size: 30px;
+    content: none;
+}
+
+
+.swiper-pagination {
+    position: relative;
+    bottom: 0;
+    width: 50px;
+}
+
+.swiper-slide {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-slide-active {
+    opacity: 1;
+
+}
+
+
+
+/* Загальні стилі для секції */
+.offers-section {
+    padding: 40px 84px;
+    background-color: #5646CC1A;
+}
+
+.offers-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Стилі для першого блоку з заголовком та текстом */
+.offers-header {
+    margin-bottom: 30px;
+    width: 60%;
+}
+
+.offers-header h2 {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 55px;
+    color: #1E1E1E;
+    margin-bottom: 15px;
+}
+
+.offers-header p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    color: #1E1E1E;
+}
+
+/* Стилі для другого блоку з 6 маленькими блоками */
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.offer-box {
+    text-align: left;
+}
+
+.offer-number {background-color: #5646cc;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+.offer-number span{
+    
+}
+*/
+.offer-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26.4px;
+    color: #1E1E1E;
+    margin-bottom: 10px;
+}
+
+.offer-description {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19.5px;
+    color: #1E1E1E;
+    line-height: 1.4;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    .offers-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .offers-header {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+.tech-swiper-container{
+    max-width: 1200px;
+}
+.tech-swiper, .blog-swaper{
+    overflow: hidden;
+}
+
+.tab {
+    width: 166px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+
+    background-color: #fff;
+    border: 0;
+    border-bottom: #e6e4f8 solid 3px;
+}
+
+.tab.active{
+    border-bottom: #5646cc solid 3px;
+}
